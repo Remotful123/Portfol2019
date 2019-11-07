@@ -94,6 +94,10 @@ display: block;
 }
 
 
+div.main {
+  padding: 10%;
+}
+
 .round {
     border-radius: 50%;
 }
@@ -118,9 +122,11 @@ border: white ;
       position: fixed;
   left: 0;
   bottom: 0;
+  height: 10%;
   width: 100%;
   color: black;
   text-align: left;
+
 }
 
 
@@ -141,21 +147,16 @@ box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.5);
 
 
 #footerleft {
-   left: 0;
-  bottom: 0;
-  
+  float:left;
   list-style-type: none;
 }
 
 
 #footerright {
-  right: 0;
-  bottom: 0;
+  float: right;
   list-style-type: none;
 
 }
-
-
 
 
 .one{
@@ -164,28 +165,44 @@ box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.5);
   height: 100px;
   margin: 0 auto;
   clear:left;
+  display:inline-block;
+  margin:auto;
+  vertical-align: top;
+  /*to fix divs not aligning css*/
 
   
 }
 
-.two {
-  background-color: #3D9970;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 50%;
-  margin-left: 50px;
-  margin-bottom: 50px;
-
-}
 
 
 
 .vid {
-      position: absolute;
+
       width: 300px;
       height: 300px;
-      margin-left: 20px;  
-      margin-top: 0px;
+        
       background-color: black;
+
 }
+
+#myFrame {
+    
+position: absolute; 
+right: 50px; 
+top: 200px; 
+
+}
+
+
+.blackframe {
+    border-bottom: 1px solid black; 
+    border-top: 1px solid black; 
+      border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-radius: 5px;
+        border-width: 10px;
+        width:auto;
+        text-align: center;
+
+/*Set text-align:center; to the parent div, and margin:auto; to the child div. to center child divs*/
+        }
