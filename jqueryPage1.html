@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+</script>
+  
+
+
+
+
+</head>
+<body >
+
+
+<header>
+  
+  <h1>Welcome</h1>
+
+</header>
+
+
+
+
+
+<button>Hit IT</button>
+
+<button id="2nd">Just the middle</button>
+
+<button id="3rd">3rd button</button>
+<button id="4th"> 4th</button>
+<button id="5th"> 5</button>
+<button id="6th">6</button>
+<button id="7th">7</button>
+<button id="8th">8</button>
+<button id="9th">9</button>
+<button id="10th">10</button>
+
+<div class="main">
+  
+
+  <p> 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum sapiente in doloremque aliquam ducimus inventore, incidunt, consequatur dolorem magnam aperiam labore modi? Eaque eveniet maxime laudantium, incidunt officia ipsam molestias dolorum animi odio facere. Veniam soluta similique, molestias impedit accusamus voluptatibus quas aperiam assumenda, neque nisi eaque consequuntur fugiat ad.
+</p>
+
+
+<p> 
+
+Lorem ipsum dolor sit amet, consectetur adipisicing <b>elit</b>. Debitis, eveniet nobis quos ipsa eligendi quam quo dolore quisquam quidem dignissimos, libero, odio sapiente enim amet. Dicta culpa reprehenderit laudantium molestias eaque quasi veritatis voluptates obcaecati, qui temporibus numquam, eligendi laboriosam possimus optio nobis quod itaque aliquam dolore et sequi hic pariatur deserunt repellat! Hic error dicta iusto adipisci nemo, rem aspernatur blanditiis, architecto sapiente repellendus ipsum vero fugiat, quasi facilis doloribus delectus! Ducimus laborum quibusdam, modi, iusto delectus dolores quam provident inventore voluptate nobis aliquid minus quisquam numquam accusantium eum rem blanditiis odio! Labore ut nihil, enim blanditiis reprehenderit minima optio quaerat deleniti impedit dolorem, ab facilis autem. Eveniet, dignissimos. Nobis a optio vel, voluptates quisquam? Debitis itaque, nostrum! Neque accusamus ea, pariatur, rerum necessitatibus facere minima voluptatibus enim nisi optio voluptatem, voluptates, porro debitis nihil commodi similique praesentium mollitia quia nam laboriosam! Dicta suscipit repellat accusantium dignissimos veniam! Repellat quisquam nisi nesciunt sapiente, ad temporibus qui vel vitae corporis laboriosam totam tempora dolor vero numquam! Eum consectetur culpa itaque, assumenda autem suscipit! Quisquam molestias minus dolores hic, laboriosam repellat, cum iste maxime quia aspernatur necessitatibus, earum nesciunt doloremque? Autem nostrum, distinctio aperiam neque accusantium sapiente voluptatibus rerum magni ipsum Shamir.
+</p>
+
+</div>
+
+
+<div id="jackson">  
+
+
+<p> JACKSON</p>
+<p>MENDOL</p>
+
+
+</div>
+
+
+<div class="middle">
+  
+
+MIDDLE MIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLEMIDDLE
+
+</div>
+
+<div class="main">
+  Lorem ipsum dolor sit amet.
+</div>
+
+<sidebar>
+  
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li></li>
+</ul>
+
+
+</sidebar>
+
+
+<footer></footer>
+
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+<script>
+
+$(document).ready(function () {
+
+
+$("button").click(function  () { 
+  $("div:last").hide()
+}) 
+
+
+$("#2nd").click(function  () { 
+  $("div:not(#main").hide()
+
+}) 
+
+
+$("#3rd").click(function  () { 
+  $("#jackson p:first").hide()
+
+}) 
+
+$("#4th").click(function  () { 
+  $("div:even").hide()
+
+}) 
+
+
+$("#5th").click(function  () { 
+  $("div:odd").hide()
+
+})
+
+
+$("#6th").click(function  () { 
+  $("p:contains('Shamir')").hide()
+
+})
+
+
+$("#7th").click(function  () { 
+  $("div:has(p)").hide()
+
+})
+
+$("#8th").click(function  () { 
+  $("div:has(b)").hide()
+
+})
+
+$("#9th").click(function  () { 
+  $("ul li:nth-child(2)").hide()
+
+})
+
+$("#10th").click(function  () { 
+  $("li:empty").hide()
+
+})
+
+
+})
+
+
+// $(document).ready(function () {
+
+// })
+
+
+</script>
+
+
+
+</body>
+</html>

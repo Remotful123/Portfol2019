@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
 <link rel="stylesheet" type="text/css" href="index.css">
-<script type="text/javascript" src="jquery-1.8.1-min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 
 </script>
   
@@ -15,10 +16,15 @@
 </head>
 <body >
 
+<div class="wrapper">
+
+
 <div id="body1">
 
 <script>const el = document.querySelector("#body1");</script>
 
+
+<div class="navi">
      <ul id="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="3D.html">Art</a></li>
@@ -31,6 +37,11 @@
 
 
 
+</div>
+
+
+
+
 
 
 <div id="logo">
@@ -40,7 +51,7 @@ LOGO HERE
 </div>
 
 
-<h1>Welcome!!!</h1>
+<h1 style='text-shadow: 2px 2px white;'>Welcome!!!</h1>
         
 
 
@@ -50,7 +61,10 @@ LOGO HERE
 <div id="body2">
 
 
-<h2>This is a site showing my hobbies</h2>
+<h2 style='text-shadow: 2px 2px black;color:white;'>This is a site showing my hobbies</h2>
+
+<div id="shamir">Hide Footer Click Here!!</div>
+
     
     </div>
 
@@ -59,12 +73,32 @@ LOGO HERE
 <p id="footerleft">Matmiel Productios 2019</p>
 
 <ul id="footerright">
-  <li>Facebook image</li>
-  <li>Twitter Image</li>
-  <li>Mail image</li>
+<ul class="social-icons">
+    <li><a href="http://www.facebook.com"><img src='resources\SVG\Circle Black White\facebook.svg' /></a></li>
+    <li><a href="http://www.twitter.com"><img src='resources\SVG\Circle Black White\twitter.svg' /></a></li>
+    <li><a href="http://www.youtube.com"><img src='resources\SVG\Circle Black White\youtube.svg' /></a></li>
+    <li><a href="mail"><img src='resources\SVG\envelope.svg' /></a></li>
+</ul>
+
+
+
 </ul>
 
 </div>
+
+</div>
+
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("div#shamir").click(function (){
+      $("div.footer").hide();
+    })
+  })
+</script>
+
+
 
 </body>
 </html>

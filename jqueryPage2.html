@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JqueryPG2</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	
+<header>
+	
+<button id="1st">Hide not shamir</button>
+<button id="2nd">2nd</button>
+<button id="3rd">3rd</button>
+<button id="4th">4th</button>
+<button id="5th">5th</button>
+<button id="6th">6th</button>
+<button id="7th">7th</button>
+<button id="8th">8th</button>
+<button id="9th">9th</button>
+<button id="10th">10th</button>
+<button id="11th">11th</button>
+<button id="12th">12th</button>
+<button id="13th">13th</button>
+<button id="14th">14th</button>
+<button id="15th">15th</button>
+<button id="16th">16th</button>
+<button id="17th">17th</button>
+<button id="18th">18th</button>
+<button id="19th">19th</button>
+<button id="20th">20th</button>
+
+</header>
+
+
+
+<ul>
+	<li>Start here</li>
+</ul>
+
+
+<img id="clef" src="./resources/clef.png" alt="">
+
+
+
+	<div class="ma" >
+
+
+<p class="para">
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repellendus perspiciatis reprehenderit, incidunt tempore porro blanditiis repellat cumque ipsam, architecto quisquam. Deleniti consequatur laudantium sit aspernatur? Neque consectetur optio ut!
+
+</p>
+
+<p class="para">	2nd para</p>
+
+</div>
+	<div class="ma">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum atque, cumque itaque ipsa! Officia reiciendis dolor iure ullam nulla facilis expedita iusto, distinctio quis minus voluptatem, dolore ab doloribus.</div>
+	<div class="ma">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illum quas beatae quos repellat ut error laboriosam possimus ipsum sunt quae recusandae, architecto aut explicabo cum ex repudiandae, neque distinctio.</div>
+
+	<div class="shamir"><b>Lorem</b> ipsum dolor sit amet, 
+
+<p>	Magic TRICK!!!</p>
+		consectetur adipisicing elit. Dignissimos perspiciatis soluta et iure laborum quidem unde laudantium veniam. Neque voluptas unde eaque velit autem quod ducimus nostrum sed expedita <b>ut!</b></div>
+
+
+	<footer class="footer">
+		
+blank blank bla bla
+
+	</footer>
+
+<script>
+	
+
+$("#1st").click(function  () { 
+  $("div:not(.ma)").hide()
+
+})
+
+$("#2nd").click(function  () { 
+  $(".ma").css("color","red")
+
+})
+
+
+$("#3rd").click(function  () { 
+  $(".ma").css({"border" : "solid 2px red" , "color" : "blue"});
+  $(".shamir").css({"border" : "solid 2px purple" , "color" : "green" ,"padding" : "100px" });
+
+})
+
+
+$("#4th").click(function  () { 
+  $("p").html("<p>SURPRISE !!!!</p>")
+
+
+})
+
+
+$("#5th").click(function  () { 
+  $("p").html("<h2>DIDNT SEE THAT COMING DIDYA</h2>")
+
+
+})
+
+
+$("#6th").click(function  () { 
+  $("p").fadeOut("2000")
+
+
+})
+
+
+$("#7th").click(function  () { 
+  $(".ma").addClass("ma2")
+
+
+})
+
+
+
+$("#8th").click(function  () { 
+  // $("p:first").removeClass("para");
+  $("p").toggleClass("para")
+
+
+})
+
+
+$("#9th").click(function  () { 
+  
+  $("p").fadeOut(500).fadeOut(500);
+
+
+})
+
+$("#10th").click(function  () { 
+  
+  $("p").fadeToggle(500);
+  //add html here that says it is minimized
+  $(".ma").append("<h2>It is minimized</h2>")
+
+
+})
+
+$("#11th").click(function  () { 
+  
+  $("p").prepend("<h2>prepended</h2>");
+
+
+})
+
+
+$("#12th").click(function  () { 
+  
+  $("p").after("<p>after</p>");
+
+
+})
+
+
+$("#13th").click(function  () { 
+  
+  $("p").replaceWith("<p>REPLACED</p>");
+
+
+})
+
+$("#14th").click(function  () { 
+  
+  $(".ma:first").remove();
+
+
+})
+
+
+$("#15th").click(function  () { 
+  
+  $("img#clef").removeAttr("src");
+
+
+})
+
+$("#16th").mouseover(function  () { 
+  
+  $("p:last").text("VICTORYYYYY");
+
+
+})
+
+$("img#clef").hover(function  () { 
+  
+  $("img#clef").attr('src','./resources/witch.jpg');
+
+})
+
+$("#17th").hover(function  () { 
+  
+  $("img#clef").hide();
+
+
+})
+
+
+$("img#clef").ready( function () {
+	$("p:first").prepend("<h2>IMAGE LOADED</h2>");
+})
+
+
+$("#18th").click(function  () { 
+  
+  $("li").each(function() {
+
+
+
+// FIX THIS IT DOESNT add list item
+  $(this).html("<li>item number 1</li>");
+
+  })
+
+
+
+})
+
+
+</script>
+ 
+
+</body>
+</html>

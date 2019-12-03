@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" type="text/css" href="index.css">
 
   <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
@@ -22,13 +25,27 @@
 </script>
 
 
-<div id="navb"></div>
-
 
 
  
 
 </script>
+
+
+<header> 
+     <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="3D.html">Art</a></li>
+            <li><a href="movies.html">Movies/TV/Games</a></li>
+            <li><a href="comics.html">Comics</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="about.html">About</a></li>
+            
+        </ul>
+
+
+<div id="body2">
+
 <div id="logo">
 <h2>
 LOGO HERE
@@ -36,24 +53,70 @@ LOGO HERE
 </div>
 
 
-<h1>Welcome!!!</h1>
+</header>
+
+<div id="body1">
+
+<h1>Here are some pages from comic books I read this year</h1>
         
 
+<div>
+    <img id="image2" />
+</div>
 
 
-        <img class="round" src=resources/portraitsite.png alt="Avatar">
 
-<h2>This is a site showing my hobbies</h2>
+
+<script>
+  
+var imgs = [
+'resources/v1.png',
+'resources/v2.png',
+'resources/v3.png',
+'resources/v4.png',
+'resources/v5.png',
+'resources/v6.png',
+'resources/v7.png',
+'resources/v8.png',
+'resources/v9.png',
+'resources/v10.png',
+'resources/v11.png',
+'resources/v12.png',
+'resources/v13.png',
+'resources/v14.png'
+],
+curIndex = 0;
+curDuration = 1000;
+
+function slideShow() {
+  document.getElementById('image2').src = imgs[curIndex]
+  curIndex++;
+
+
+if (curIndex == imgs.length) {
+  curIndex = 0;
+}
+setTimeout("slideShow()",curDuration)
+}
+
+slideShow();
+
+</script>
+
     
 
-<<div class = "footer">
+</div>
 
-<p id="footerright">Matmiel Productios 2019</p>
+</div>
 
-<ul id="footerleft">
-    <li>Facebook image</li>
-    <li>Twitter Image</li>
-    <li>Mail image</li>
+<div class="footer">
+
+<p id="footerleft">Matmiel Productios 2019</p>
+
+<ul id="footerright">
+  <li>Facebook image</li>
+  <li>Twitter Image</li>
+  <li>Mail image</li>
 </ul>
 
 </div>

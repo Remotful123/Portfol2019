@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Art</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" type="text/css" href="index.css">
 
 
@@ -10,12 +13,8 @@
 </head>
 <body>
  
-<script >
+<div id="main">
 
-// Fix navbar
-$('#nav-container').load('C:/Tomer/Programming/html_css2019/projects/PortfolioJS/nav.html');
-
-</script>
 
 <div id="body2">
 
@@ -44,11 +43,37 @@ LOGO HERE
 
 <h1>Here are my 3D models</h1>
         
-
-
-
 <div>
     <img id="image1" />
+</div>
+
+
+
+
+    
+    </div>
+
+
+
+<div id="body3">
+
+<h1>Here are my drawings </h1>
+      <!-- add pics -->
+<div>
+    <img id="image2" />
+</div>
+<!-- //script -->
+
+
+</div>
+
+
+
+<div id="body4">
+ <h1>Here are my clay sculptures </h1>
+        
+
+        <img id="image3"/>       <!-- add pics -->
 </div>
 
 
@@ -61,56 +86,67 @@ var imgs = [
 'resources/3d_3.png',
 'resources/3d_4.png',
 'resources/3d_5.png'
-],
+]
+var imgs2 = [
+'resources/11.jpg',
+'resources/12.jpg',
+'resources/14.jpg',
+'resources/15.jpg',
+'resources/16.jpg',
+'resources/17.jpg',
+'resources/18.jpg'
+]
+var imgs3 = [
+
+
+"resources/sculptures/Photo0053.jpg",
+"resources/sculptures/Photo0054.jpg",
+'resources/sculptures/Photo0055.jpg',
+'resources/sculptures/Photo0056.jpg',
+'resources/sculptures/Photo0057.jpg',
+'resources/sculptures/Photo0058.jpg',
+'resources/sculptures/Photo0059.jpg',
+'resources/sculptures/Photo0060.jpg',
+'resources/sculptures/Photo0061.jpg',
+'resources/sculptures/Photo0062.jpg'
+]
+,
 curIndex = 0;
 curDuration = 5000;
-
 function slideShow() {
   document.getElementById('image1').src = imgs[curIndex]
+  document.getElementById('image2').src = imgs2[curIndex]
+    document.getElementById('image3').src = imgs3[curIndex]
   curIndex++;
-
-
 if (curIndex == imgs.length) {
   curIndex = 0;
 }
 setTimeout("slideShow()",curDuration)
 }
-
 slideShow();
-
 </script>
-    
-    </div>
 
-
-<div id="body3">
-
-<h1>Here are my drawings </h1>
-      <!-- add pics -->
-
-</div>
-
-
-<div id="body4">
- <h1>Here are my clay sculptures </h1>
-               <!-- add pics -->
-</div>
 
 
 
 <script src="C:\Tomer\Programming\html_css2019\projects\PortfolioJS\jquery-3.4.1.min.js"></script>
+</div>
 
+<div class="footer">
 
-<div class = "footer">
+<p id="footerleft">Matmiel Productios 2019</p>
 
-<p id="footerright">Matmiel Productios 2019</p>
-
-<ul id="footerleft">
+<ul id="footerright">
   <li>Facebook image</li>
   <li>Twitter Image</li>
   <li>Mail image</li>
 </ul>
 
 </div>
+
+
+
+
+
 </body>
 </html>
